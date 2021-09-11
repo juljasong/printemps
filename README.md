@@ -5,3 +5,5 @@ using https://start.spring.io/
 - Dependencies
 -- Spring Web
 -- Thymeleaf
+
+# 20210911_ [ADD] Welcome Page, Controller
