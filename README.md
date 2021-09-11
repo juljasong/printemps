@@ -69,3 +69,9 @@ $ ./gradlew clean build
 ```
 
 ## MVC : Model-View-Controller
+
+# 20210911_ [ADD] MemoryMemberRepositoryTest
+## Test Case
+- @Test가 여러 개 존재할 때 실행 순서는 랜덤.
+- @Test가 끝날 때 마다 저장소 데이터 클리어 해 주어야 함 -> @afterEach 사용
+
