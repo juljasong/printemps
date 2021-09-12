@@ -75,3 +75,9 @@ $ ./gradlew clean build
 - @Test가 여러 개 존재할 때 실행 순서는 랜덤.
 - @Test가 끝날 때 마다 저장소 데이터 클리어 해 주어야 함 -> @afterEach 사용
 
+
+# 20210912_ [ADD] MemberController
+- @Component : @Controller, @Service, @Repository
+- @Autowired : 생성자 DI 자동 주입
+- +) 스프링 컨테이너에 스프링 빈 등록 시, 기본으로 싱글톤으로 등록(하나만 등록하여 공유)
+   = 같은 스프링 빈이면 모두 같은 인스턴스.
