@@ -93,3 +93,10 @@ $ ./gradlew clean build
 - JDBC 설정
   - application.properties
   - build.gradle
+
+# 20210912_ [ADD] MemberServiceIntegrationTest.java
+- @SpringBootTest
+- @Transactional : ROLLBACK-> DB 반영하지 않음(For test)
+
+- 순수 단위 테스트 : 순수 Java 테스트
+- 통합 테스트 : 스프링 컨테이너 + 테스트
