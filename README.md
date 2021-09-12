@@ -110,7 +110,22 @@ spring.datasource.driver-class-name=org.h2.Driver
 spring.datasource.username=sa
 spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=none // <-> create. 객체를 참조하여 테이블을 자동 생성해주지만, 이미 테이블 만들어져 있기 때문에 none
-```
+````
+
 - @Entity : JPA 관리 요소
 - @Id @GeneratedValue(strategy = GenerationType.IDENTITY) <- PK
 - @Column(name="username") : 테이블명과 domain명이 다를 때 매핑
+
+# 20210912_ Spring Data JPA
+- 인터페이스로 생성
+- ~Config.java에서 빈 생성해주지 않아도 자동으로 객체 생성해줌
+
+SpringDataMemberRepository.java
+````java
+public interface SpringDataJpaMemberRepository extends JpaRepository<Member, Long>, MemberRepository {
+
+    @Override
+    Optional<Member> findByName(String name);
+    
+}
+````
