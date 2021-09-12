@@ -77,7 +77,19 @@ $ ./gradlew clean build
 
 
 # 20210912_ [ADD] MemberController
+
+### 컴포넌트 스캔과 자동 의존관계 설정
 - @Component : @Controller, @Service, @Repository
 - @Autowired : 생성자 DI 자동 주입
 - +) 스프링 컨테이너에 스프링 빈 등록 시, 기본으로 싱글톤으로 등록(하나만 등록하여 공유)
    = 같은 스프링 빈이면 모두 같은 인스턴스.
+
+### 자바 코드로 스프링 빈 등록
+- AppConfig.java
+- @Bean으로 직접 등록
+
+# 20210912_ [ADD] ddl.sql
+- ADD ddl.sql
+- JDBC 설정
+  - application.properties
+  - build.gradle
