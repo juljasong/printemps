@@ -101,4 +101,16 @@ $ ./gradlew clean build
 - 순수 단위 테스트 : 순수 Java 테스트
 - 통합 테스트 : 스프링 컨테이너 + 테스트
 
-# 20210912_ 스프링 JbbcTemplate
+# 20210912_ 스프링 JdbcTemplate
+
+# 20210912_ JPA
+````
+spring.datasource.url=jdbc:h2:tcp://localhost/~/test
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=sa
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=none // <-> create. 객체를 참조하여 테이블을 자동 생성해주지만, 이미 테이블 만들어져 있기 때문에 none
+```
+- @Entity : JPA 관리 요소
+- @Id @GeneratedValue(strategy = GenerationType.IDENTITY) <- PK
+- @Column(name="username") : 테이블명과 domain명이 다를 때 매핑
